@@ -3,8 +3,21 @@
 {{ super() }} - {{ title }}
 {% endblock %}
 {% block content %}
-<div class="row">
-    <h3 class="col-12 col-md-6 display-2">Телефоны</h3>
-    <img src="/static/img/main.jpg" class="col-12 col-md-6 img-fluid" alt="Главная">
+<div class="container text-center">
+    <h1 class="col">Телефоны</h1>
+    <div class="row row-cols-4">
+        <div class="col m-3 shadow sm p-2 border border-opacity-50 rounded">
+            Слабый телефон
+            <img src="/static/img/tele/tele1.jpg" class="col-8 img-fluid" alt="1">
+        </div>
+        <div class="col m-3 shadow sm p-2 border border-opacity-50 rounded">
+            Средний телефон
+            <img src="/static/img/tele/tele2.jpg" class="col-8 img-fluid" alt="2">
+        </div>
+        <div class="col m-3 shadow sm p-2 border border-opacity-50 rounded">
+            Сильный телефон
+            <img src="/static/img/tele/tele3.jpg" class="col-8 img-fluid" alt="3">
+        </div>
+    </div>
 </div>
 {% endblock %}

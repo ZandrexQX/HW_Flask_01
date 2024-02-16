@@ -21,12 +21,21 @@ def computers():
     }
     return render_template('computers.html', **context)
 
+
 @app.route('/noutebook/')
 def noutebooks():
     context = {
         'title': 'Ноутбуки',
     }
     return render_template('noutebook.html', **context)
+
+
+@app.route('/telephones/')
+def telephones():
+    context = {
+        'title': 'Телефоны',
+    }
+    return render_template('telephone.html', **context)
 
 
 if __name__ == '__main__':
