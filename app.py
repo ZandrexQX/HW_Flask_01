@@ -10,9 +10,23 @@ app = Flask(__name__)
 def index():
     context = {
         'title': 'Интернет-магазин',
-        'name': 'Zandrex'
     }
-    return render_template('base.html', **context)
+    return render_template('main.html', **context)
+
+
+@app.route('/computers/')
+def computers():
+    context = {
+        'title': 'Компьютеры',
+    }
+    return render_template('computers.html', **context)
+
+@app.route('/noutebook/')
+def noutebooks():
+    context = {
+        'title': 'Ноутбуки',
+    }
+    return render_template('noutebook.html', **context)
 
 
 if __name__ == '__main__':

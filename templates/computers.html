@@ -1,10 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
-
-</body>
-</html>
+{% extends 'base.html' %}
+{% block title %}
+{{ title }}
+{% endblock %}
+{% block content %}
+<div class="container text-center">
+    <h1 class="col">Компьютеры</h1>
+    <div class="row row-cols-4">
+        <div class="col m-3 shadow sm p-2 border border-opacity-50 rounded">
+            Слабый компьютер
+            <img src="/static/img/comp2.jpg" class="col-8 img-fluid" alt="Главная">
+        </div>
+        <div class="col m-3 shadow sm p-2 border border-opacity-50 rounded">
+            Средний компьютер
+            <img src="/static/img/comp1.jpeg" class="col-8 img-fluid" alt="Главная">
+        </div>
+        <div class="col m-3 shadow sm p-2 border border-opacity-50 rounded">
+            Сильный компьютер
+            <img src="/static/img/comp3.jpg" class="col-8 img-fluid" alt="Главная">
+        </div>
+    </div>
+</div>
+{% endblock %}
